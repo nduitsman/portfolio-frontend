@@ -12,6 +12,7 @@ function Projects(props) {
     
 		// turn response into javascript object
     const data = await response.json();
+    console.log(props.URL)
     
 		// set the projects state to the data
     setProjects(data);
