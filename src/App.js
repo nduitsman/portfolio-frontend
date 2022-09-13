@@ -2,7 +2,7 @@ import './App.css';
 // components
 import Footer from './components/Footer'
 import Header from './components/Header'
-import { Route, Switch } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 // pages
 import Home from './pages/Home'
 import About from './pages/About'
