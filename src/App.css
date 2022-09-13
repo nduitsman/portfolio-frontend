@@ -6,10 +6,11 @@
     --yellow: rgb(255,255,153);
     --purple: rgb(204,153,255);
 }
-
+* {
+  background-color: #3b2a27;
+}
 .App {
   text-align: center;
-  background-color: #3b2a27;
 }
 
 .container2 {
