@@ -1,3 +1,4 @@
+import '../Projects.css'
 import { useState, useEffect } from "react";
 import Header from "../components/Header";
 function Projects(props) {

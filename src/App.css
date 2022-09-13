@@ -1,22 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-:root {
-    --orange: rgb(255,150,50);
-    --red: rgb(255,102,102);
-    --green: rgb(102,255,102);
-    --yellow: rgb(255,255,153);
-    --purple: rgb(204,153,255);
-}
-
 * {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #3b2a27;
+    background-color: #0f1106;
+    color: white;
 }
 
 .homeContainer {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 22%;
     max-width: 40%;
     max-height: 40%;
@@ -59,31 +52,6 @@ ul li a:hover::before {
     filter: drop-shadow(0 0 25px white);
 }
 
-#home::before {
-    color: transparent;
-    -webkit-text-stroke: 1px var(--orange);
-    border-right: 8px solid var(--orange);
-}
-#products::before {
-    color: transparent;
-    -webkit-text-stroke: 1px var(--red);
-    border-right: 8px solid var(--red);
-}
-#generalassembly::before {
-    color: transparent;
-    -webkit-text-stroke: 1px var(--green);
-    border-right: 8px solid var(--green);
-}
-#example::before {
-    color: transparent;
-    -webkit-text-stroke: 1px var(--yellow);
-    border-right: 8px solid var(--yellow);
-}
-#workout::before {
-    color: transparent;
-    -webkit-text-stroke: 1px var(--purple);
-    border-right: 8px solid var(--purple);
-}
 .homeLink {
     font-size: 8vh;
     position: absolute;

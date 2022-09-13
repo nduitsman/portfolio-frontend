@@ -12,7 +12,7 @@ function Home(props) {
         <p className="github homeLink"><Link to="/projects" data-text="github" id="horiz">github</Link></p>
         <p className="goals homeLink"><Link to="/about" data-text="goals" id="horiz">goals</Link></p>
         <p className="experience homeLink"><Link to="/about" data-text="experience" id="vert">experience</Link></p>
-        <p className="future homeLink"><Link to="/about" data-text="future" cid="horiz">future</Link></p>
+        <p className="future homeLink"><Link to="/about" data-text="future" id="horiz">future</Link></p>
         <p className="projects homeLink"><Link to="/projects" data-text="projects" id="vert">projects</Link></p>
         <p className="codepen homeLink"><Link to="/about" data-text="codepen" id="horiz">codepen</Link></p>
     </div>
