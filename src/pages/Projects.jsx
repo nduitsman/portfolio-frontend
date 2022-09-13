@@ -7,15 +7,15 @@ function Projects(props) {
 
   //create function to make api call
   const getProjectsData = async () => {
-    
-		//make api call and get response
+
+    //make api call and get response
     const response = await fetch(props.URL + "projects");
-    
-		// turn response into javascript object
+
+    // turn response into javascript object
     const data = await response.json();
     console.log(props.URL)
-    
-		// set the projects state to the data
+
+    // set the projects state to the data
     setProjects(data);
 
   };
@@ -28,21 +28,22 @@ function Projects(props) {
   // define a function that will return the JSX needed once we get the data
   const loaded = () => {
     return projects.map((project) => (
-      <div>
-        <Header />
+      <div className='projectContainer'>
         <h1>{project.name}</h1>
         <img src={project.image} />
-        <a href={project.git}>
-          <button>Github</button>
-        </a>
-        <a href={project.live}>
-          <button>live site</button>
-        </a>
+        <div>
+          <a href={project.git}>
+            <button>Github</button>
+          </a>
+          <a href={project.live}>
+            <button>Live Site</button>
+          </a>
+        </div>
       </div>
     ));
   };
 
-  return projects ? loaded() : <h1>Loading...</h1>;
+  return projects ? <div><Header /><div className = 'projectCard'>{loaded()}</div></div> : <h1></h1>;
 }
 
 export default Projects;
