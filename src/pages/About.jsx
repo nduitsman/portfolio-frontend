@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Header from "../components/Header";
 
 function About(props) {
   // create state to hold about data
@@ -26,9 +27,13 @@ function About(props) {
   function loaded() {
     return (
     <div>
+      <Header />
       <h2>{about.name}</h2>
       <h3>{about.email}</h3>
-      <p>{about.bio}</p>
+      <img src={about.headshot} alt='headshot'/>
+      <div>
+        <p>{about.bio}</p>
+      </div>
     </div>
     );
     }

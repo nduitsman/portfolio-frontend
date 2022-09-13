@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import Header from "../components/Header";
 function Projects(props) {
   // create state to hold projects
   const [projects, setProjects] = useState(null);
@@ -28,6 +28,7 @@ function Projects(props) {
   const loaded = () => {
     return projects.map((project) => (
       <div>
+        <Header />
         <h1>{project.name}</h1>
         <img src={project.image} />
         <a href={project.git}>
