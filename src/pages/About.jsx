@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Header from "../components/Header";
 
 function About(props) {
   // create state to hold about data
@@ -26,8 +25,7 @@ function About(props) {
   // define a function that will return the JSX needed once we get the data
   function loaded() {
     return (
-    <div>
-      <Header />
+    <div className='aboutPage'>
       <h2>{about.name}</h2>
       <h3>{about.email}</h3>
       <img src={about.headshot} alt='headshot'/>

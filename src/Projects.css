@@ -3,14 +3,16 @@
     flex-direction: column;
     align-items: center;
     font-family:  'Fredoka One', cursive;
+    grid-column: 2;
 }
 img {
     max-width: 90%;
 }
 .projectContainer {
+    
     margin: 1em;
     border: 1px solid white;
-    width: 60%;
+    max-width: 40em;
     padding: 0.5em;
     border-radius: 20px;
     box-shadow: 1px 5px 6px 4px rgb(215,215,215);
@@ -24,9 +26,13 @@ button {
     color: transparent;
     -webkit-text-stroke: 2px rgba(225,225,225,0.5);
     font-family:  'Fredoka One', cursive;
+    border: none;
 }
 button:hover {
-    background-color: white;
-    color: transparent;
+    color: white;
     -webkit-text-stroke: 2px rgb(16,16,26);
+}
+h1 {
+    margin: 0.5em;
+    letter-spacing: 0.1em;
 }

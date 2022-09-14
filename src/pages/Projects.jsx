@@ -43,7 +43,7 @@ function Projects(props) {
     ));
   };
 
-  return projects ? <div><Header /><div className = 'projectCard'>{loaded()}</div></div> : <h1></h1>;
+  return projects ? <div className = 'projectCard'>{loaded()}</div> : <h1></h1>;
 }
 
 export default Projects;
